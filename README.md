@@ -1,7 +1,7 @@
 <h2 align="center"><u>TASKIFY</u></h2>
+<h4 align="center"> Your task simplified. </h4>
 
 ![Your task simplified.](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/1.png)
-<h4 align="center"> Your task simplified. </h4>
 
 <p align="center">
     <img src="https://img.shields.io/github/forks/cyber752/Taskify?style=for-the-badge&color=purple">
@@ -35,7 +35,7 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
  - Web Interface
  - Push Notifications
 
-### [+] taskify
+### [+] TASKIFY
 Your task simplified.
 
 ### [+] Credits 
