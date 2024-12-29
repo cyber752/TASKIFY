@@ -27,7 +27,9 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
  - `Complete your task!`
 
 ### [+] Screenshot
-![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/1.png)
+![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/2.png)
+![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/3.png)
+![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/4.png)
 
 ### [+] Features
  - Simple UI Design
