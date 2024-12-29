@@ -13,6 +13,7 @@
     <img src="https://img.shields.io/badge/Maintained-Yes-cyan?style=flat-square">
     <img src="https://img.shields.io/badge/Made%20In-Egypt with ❤️-green?style=flat-square">
     <img src="https://img.shields.io/badge/Written%20In-flutter-blue?style=flat-square">
+    <img src="https://img.shields.io/github/downloads/cyber752/TASKIFY/total">
 </p>
 
 ### [+] Disclaimer 
@@ -34,7 +35,7 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
  - `Complete your task!`
 
 ### [+] Credits 
-<a href="https://github.com/cyber752/Taskify">Andrew Mikhail (Cyber752)</a>
+<a href="https://github.com/cyber752">Andrew Mikhail (Cyber752)</a>
 
 ### [+] Screenshot
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/44.png)
