@@ -18,6 +18,12 @@
 ### [+] Description
 TASKIFY is an app that manages your tasks. Customized for your personal needs. Simplified workspace and design.
 
+### [+] Features
+ - Simple UI Design
+ - Repeating Task
+ - Web Interface
+ - Push Notifications
+
 ### [+] Usage
  - `Download the latest version.`
  - `Install it on your Android phone.`
@@ -29,13 +35,6 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/33.png)
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/22.png)
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/55.png)
-
-
-### [+] Features
- - Simple UI Design
- - Repeating Task
- - Web Interface
- - Push Notifications
 
 ### [+] TASKIFY
 Your task simplified.
