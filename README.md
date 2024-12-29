@@ -15,6 +15,9 @@
     <img src="https://img.shields.io/badge/Written%20In-flutter-blue?style=flat-square">
 </p>
 
+### [+] Disclaimer 
+Currently, the app is available only on Android.
+
 ### [+] Description
 TASKIFY is an app that manages your tasks. Customized for your personal needs. Simplified workspace and design.
 
@@ -30,6 +33,9 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
  - `Create A Task.`
  - `Complete your task!`
 
+### [+] Credits 
+<a href="https://github.com/cyber752/Taskify">Andrew Mikhail (Cyber752)</a>
+
 ### [+] Screenshot
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/44.png)
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/33.png)
@@ -38,10 +44,4 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
 
 ### [+] TASKIFY
 Your task simplified.
-
-### [+] Credits 
-<a href="https://github.com/cyber752/Taskify">Andrew Mikhail (Cyber752)</a>
-
-### [+] Disclaimer 
-Currently, the app is available only on Android.
 
