@@ -13,8 +13,6 @@
     <img src="https://img.shields.io/badge/Maintained-Yes-cyan?style=flat-square">
     <img src="https://img.shields.io/badge/Made%20In-Egypt with ❤️-green?style=flat-square">
     <img src="https://img.shields.io/badge/Written%20In-flutter-blue?style=flat-square">
-<br>
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=cyber752&repo=Taskify&theme=synthwave">
 </p>
 
 ### [+] Description
