@@ -1,6 +1,6 @@
 <h2 align="center"><u>TASKIFY</u></h2>
 
-![Your task simplified.](![alt-text](/main/Art/1.png))
+![Your task simplified.](![alt-text[](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/1.png)))
 <h4 align="center"> Your task simplified. </h4>
 
 <p align="center">
@@ -27,7 +27,7 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
  - `Complete your task!`
 
 ### [+] Screenshot
-![screenshot](www.github.com/cyber752/Taskify/blob/main/Art/1.png)
+![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/1.png)
 
 ### [+] Features
  - Simple UI Design
