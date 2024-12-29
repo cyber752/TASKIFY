@@ -1,6 +1,6 @@
 <h2 align="center"><u>TASKIFY</u></h2>
 
-![Your task simplified.](![alt-text[](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/1.png)))
+![Your task simplified.](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/1.png)
 <h4 align="center"> Your task simplified. </h4>
 
 <p align="center">
