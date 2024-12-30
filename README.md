@@ -16,6 +16,9 @@
     <img src="https://img.shields.io/github/downloads/cyber752/TASKIFY/total">
 </p>
 
+### [+] Support
+<p><a href="https://ko-fi.com/cyber752"> <img align="center" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="cyber752" /></a></p><br><br>
+
 ### [+] Disclaimer 
 Currently, the app is available only on Android.
 
@@ -45,6 +48,3 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/33.png)
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/22.png)
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/55.png)
-
-### [+] Support
-<p><a href="https://ko-fi.com/cyber752"> <img align="center" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="cyber752" /></a></p><br><br>
