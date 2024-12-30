@@ -1,16 +1,21 @@
 <h2 align="center"><u>TASKIFY</u></h2>
 <h4 align="center"> Your task simplified. </h4>
+<p align="center">
+    <img src="https://img.shields.io/github/v/release/cyber752/taskify">
+</p>
+
 
 ![Your task simplified.](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/1.png)
 
 <p align="center">
-    <img src="https://img.shields.io/github/forks/cyber752/Taskify?style=for-the-badge&color=purple">
     <img src="https://img.shields.io/github/license/cyber752/Taskify?style=for-the-badge&color=blue">
     <img src="https://img.shields.io/github/contributors/cyber752/Taskify?style=for-the-badge&color=cyan">
 <br>
+<img src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white">
     <img src="https://img.shields.io/badge/Author-Andrew Mikhail (Cyber752)-magenta?style=flat-square">
     <img src="https://img.shields.io/badge/Open%20Source-Yes-orange?style=flat-square">
     <img src="https://img.shields.io/badge/Maintained-Yes-cyan?style=flat-square">
+<br>
     <img src="https://img.shields.io/badge/Made%20In-Egypt with ❤️-green?style=flat-square">
     <img src="https://img.shields.io/badge/Written%20In-flutter-blue?style=flat-square">
     <img src="https://img.shields.io/github/downloads/cyber752/TASKIFY/total">
