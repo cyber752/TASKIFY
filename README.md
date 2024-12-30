@@ -15,7 +15,6 @@
     <img src="https://img.shields.io/github/license/cyber752/Taskify?style=for-the-badge&color=blue">
     <img src="https://img.shields.io/github/contributors/cyber752/Taskify?style=for-the-badge&color=cyan">
 <br>
-<img src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white">
     <img src="https://img.shields.io/badge/Author-Andrew Mikhail (Cyber752)-magenta?style=flat-square">
     <img src="https://img.shields.io/badge/Open%20Source-Yes-orange?style=flat-square">
     <img src="https://img.shields.io/badge/Maintained-Yes-cyan?style=flat-square">
