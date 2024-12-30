@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify Web</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #D23B45;
+            --background-color: #121212;
+            --surface-color: #1E1E1E;
+            --text-color: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --border-radius: 16px;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(
+                135deg,
+                rgba(210, 59, 69, 0.15) 0%,
+                rgba(210, 59, 69, 0.05) 50%,
+                transparent 100%
+            );
+            padding: 24px;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .app-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .app-name {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, var(--accent-color), #FF6B6B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .greeting-container {
+            text-align: center;
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px);
+        }
+
+        .greeting {
+            background: linear-gradient(45deg, var(--accent-color), #FF6B6B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .date {
+            color: var(--text-secondary);
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .filters {
+            margin-bottom: 24px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            padding: 16px;
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-chip {
+            background: rgba(210, 59, 69, 0.1);
+            color: var(--accent-color);
+            border: 1px solid rgba(210, 59, 69, 0.2);
+            padding: 10px 20px;
+            border-radius: 24px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .filter-chip:hover {
+            background: rgba(210, 59, 69, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .filter-chip.selected {
+            background: var(--accent-color);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 4px 12px rgba(210, 59, 69, 0.3);
+        }
+
+        .todo-item {
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .todo-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .todo-checkbox {
+            width: 28px;
+            height: 28px;
+            border: 2px solid var(--accent-color);
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .todo-checkbox.checked {
+            background-color: var(--accent-color);
+            border-color: transparent;
+        }
+
+        .todo-checkbox.checked::after {
+            content: '✓';
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .todo-content {
+            flex-grow: 1;
+        }
+
+        .todo-text {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .todo-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .completed-time {
+            color: var(--accent-color);
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .tags-container {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .tag {
+            background: linear-gradient(45deg, var(--accent-color), #FF6B6B);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(210, 59, 69, 0.2);
+        }
+
+        .tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(210, 59, 69, 0.3);
+        }
+
+        .priority-chip {
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .priority-0 { 
+            background: linear-gradient(45deg, #28a745, #34ce57);
+            color: white;
+        }
+        .priority-1 { 
+            background: linear-gradient(45deg, #ffc107, #ffda54);
+            color: #000;
+        }
+        .priority-2 { 
+            background: linear-gradient(45deg, #dc3545, #ff4d5a);
+            color: white;
+        }
+
+        .completed .todo-text {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 80px 24px;
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 32px;
+        }
+
+        .material-icons {
+            font-size: 72px;
+            margin-bottom: 24px;
+            background: linear-gradient(45deg, var(--accent-color), #FF6B6B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Add loading animation */
+        .loading {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading-spinner {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left-color: var(--accent-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .app-name {
+                font-size: 32px;
+            }
+
+            .greeting {
+                font-size: 24px;
+            }
+
+            .content {
+                padding: 16px;
+            }
+
+            .todo-item {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="app-header">
+            <div class="app-title">
+                <h1 class="app-name">TASKIFY</h1>
+            </div>
+        </div>
+        <div class="greeting-container">
+            <div id="greeting" class="greeting"></div>
+            <div id="current-date" class="date"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="filters" id="filters">
+            <button class="filter-chip selected" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="active">Active</button>
+            <button class="filter-chip" data-filter="completed">Completed</button>
+        </div>
+        <div id="todo-list">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading tasks...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentUsername = 'User';
+        let todos = [];
+        let currentFilter = 'all';
+        let lastUpdateTime = 0;
+
+        function debug(message, data) {
+            console.log(`[Debug] ${message}:`, data);
+        }
+
+        function updateUsername(newUsername) {
+            if (newUsername && currentUsername !== newUsername) {
+                currentUsername = newUsername;
+                updateDateTime();
+            }
+        }
+
+        function getPriorityInfo(priority) {
+            switch(priority) {
+                case 0: return { text: 'Low', icon: '↓' };
+                case 1: return { text: 'Medium', icon: '-' };
+                case 2: return { text: 'High', icon: '↑' };
+                default: return { text: 'Medium', icon: '-' };
+            }
+        }
+
+        function updateDateTime() {
+    const now = new Date();
+    const hour = now.getHours();
+    const greeting = hour < 12 ? 'Morning' : hour < 17 ? 'Afternoon' : 'Evening';
+    
+    document.getElementById('greeting').textContent = `Good ${greeting}, ${currentUsername}`;
+    document.getElementById('current-date').textContent = now.toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
+
+function renderFilters() {
+    const filterContainer = document.getElementById('filters');
+    
+    // Get unique tags from todos
+    const uniqueTags = new Set();
+    todos.forEach(todo => {
+        if (todo.tags && Array.isArray(todo.tags)) {
+            todo.tags.forEach(tag => uniqueTags.add(tag));
+        }
+    });
+
+    // Create filter HTML
+    let filterHTML = `
+        <button class="filter-chip ${currentFilter === 'all' ? 'selected' : ''}" 
+                data-filter="all">All</button>
+        <button class="filter-chip ${currentFilter === 'active' ? 'selected' : ''}" 
+                data-filter="active">Active</button>
+        <button class="filter-chip ${currentFilter === 'completed' ? 'selected' : ''}" 
+                data-filter="completed">Completed</button>
+    `;
+
+    // Add custom tag filters
+    uniqueTags.forEach(tag => {
+        filterHTML += `
+            <button class="filter-chip ${currentFilter === `tag:${tag}` ? 'selected' : ''}" 
+                    data-filter="tag:${tag}">${tag}</button>
+        `;
+    });
+
+    filterContainer.innerHTML = filterHTML;
+    
+    // Add click handlers after rendering
+    addFilterClickHandlers();
+}
+
+// Add this new function to handle filter clicks
+function addFilterClickHandlers() {
+    const filterChips = document.querySelectorAll('.filter-chip');
+    filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            // Remove selected class from all chips
+            filterChips.forEach(c => c.classList.remove('selected'));
+            // Add selected class to clicked chip
+            chip.classList.add('selected');
+            // Update current filter
+            currentFilter = chip.dataset.filter;
+            // Render todos with new filter
+            renderTodos();
+        });
+    });
+}
+
+        // Update the renderTodos function to handle tag filtering
+        function renderTodos() {
+    debug('Rendering todos', todos);
+    const todoList = document.getElementById('todo-list');
+    
+    const filteredTodos = todos.filter(todo => {
+        if (currentFilter === 'active') return !todo.completed;
+        if (currentFilter === 'completed') return todo.completed;
+        if (currentFilter.startsWith('tag:')) {
+            const filterTag = currentFilter.replace('tag:', '');
+            return todo.tags && todo.tags.includes(filterTag);
+        }
+        return true;
+    });
+
+    if (!filteredTodos || filteredTodos.length === 0) {
+        todoList.innerHTML = `
+            <div class="empty-state">
+                <i class="material-icons">add_task</i>
+                <p>No tasks to display</p>
+            </div>`;
+        return;
+    }
+
+    const todosHTML = filteredTodos.map(todo => {
+        debug('Processing todo', todo);
+        const priorityInfo = getPriorityInfo(todo.priority);
+        return `
+            <div class="todo-item ${todo.completed ? 'completed' : ''}" data-id="${todo.id}">
+                <div class="todo-checkbox ${todo.completed ? 'checked' : ''} display-only"></div>
+                <div class="todo-content">
+                    <div class="todo-text">${todo.text}</div>
+                    <div class="todo-meta">
+                        <span>Due: ${new Date(todo.date).toLocaleDateString()}</span>
+                        ${todo.completedAt ? 
+                            `<span class="completed-time">Completed: ${new Date(todo.completedAt).toLocaleString()}</span>` 
+                            : ''}
+                            <span class="priority-chip priority-${todo.priority}">
+                            ${priorityInfo.icon} ${priorityInfo.text}
+                        </span>
+                        <div class="tags-container">
+                            ${todo.tags ? todo.tags.map(tag => 
+                                `<span class="tag" onclick="filterByTag('${tag}')">${tag}</span>`).join('') : ''}
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+    }).join('');
+
+    todoList.innerHTML = todosHTML;
+    debug('Rendered HTML', todosHTML);
+}
+
+// Add this function to handle tag filtering
+function filterByTag(tag) {
+    currentFilter = `tag:${tag}`;
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+        chip.classList.remove('selected');
+        if (chip.dataset.filter === `tag:${tag}`) {
+            chip.classList.add('selected');
+        }
+    });
+    renderTodos();
+}
+
+        // Update loadTodos to call renderFilters
+        function loadTodos() {
+    debug('Loading todos');
+    fetch('/api/data')
+        .then(response => response.json())
+        .then(data => {
+            debug('Received data', data);
+            updateUsername(data.username || 'User');
+            
+            const newTodos = data.todos || [];
+            if (JSON.stringify(todos) !== JSON.stringify(newTodos)) {
+                todos = newTodos;
+                renderFilters(); // Add this line to update filters
+                renderTodos();
+            }
+            
+            lastUpdateTime = Date.now();
+            updateDateTime();
+        })
+        .catch(error => {
+            console.error('Error loading todos:', error);
+            document.getElementById('todo-list').innerHTML = `
+                <div class="empty-state">
+                    <i class="material-icons">error_outline</i>
+                    <p>Error loading todos</p>
+                    <button onclick="loadTodos()" 
+                            style="padding: 8px 16px; 
+                                   background: var(--accent-color); 
+                                   border: none; 
+                                   border-radius: 20px; 
+                                   color: white; 
+                                   cursor: pointer;">
+                        Retry
+                    </button>
+                </div>`;
+        });
+}
+
+        loadTodos();
+        setInterval(updateDateTime, 1000);
+        setInterval(loadTodos, 5000);
+    </script>
+</body>
+</html>
