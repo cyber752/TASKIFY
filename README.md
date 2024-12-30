@@ -17,7 +17,7 @@
 </p>
 
 ### [+] Support
-<p><a href="https://ko-fi.com/cyber752"> <img align="center" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="30" width="210" alt="cyber752" /></a></p><br><br>
+<p><a href="https://ko-fi.com/cyber752"> <img align="center" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="cyber752" /></a></p>
 
 ### [+] Disclaimer 
 Currently, the app is available only on Android.
