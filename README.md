@@ -1,7 +1,11 @@
 <h2 align="center"><u>TASKIFY</u></h2>
 <h4 align="center"> Your task simplified. </h4>
 <p align="center">
-    <img src="https://img.shields.io/github/v/release/cyber752/taskify">
+    <img src="https://img.shields.io/github/v/release/cyber752/taskify?sort=date&style=for-the-badge&logoColor=Black&labelColor=Black&color=red">
+<a href="https://github.com/cyber752/TASKIFY/releases">
+    <img src="https://img.shields.io/badge/Available%20On-Android-lime?style=for-the-badge&logo=android&logoColor=white&labelColor=black" alt="Available On Android">
+</a>
+
 </p>
 
 
