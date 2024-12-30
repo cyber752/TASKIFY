@@ -16,35 +16,37 @@
     <img src="https://img.shields.io/github/downloads/cyber752/TASKIFY/total">
 </p>
 
-### [+] Support
+# [+] Support
 <p><a href="https://ko-fi.com/cyber752"> <img align="center" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="cyber752" /></a></p>
 
-### [+] Disclaimer 
+# [+] Disclaimer 
 Currently, the app is available only on Android.
 
-### [+] Description
+# [+] Description
 TASKIFY is an app that manages your tasks. Customized for your personal needs. Simplified workspace and design.
 
-### [+] Features
+# [+] Features
  - Simple UI Design.
  - Repeating Task.
  - Web Interface: Access your tasks on web browsers from any device on a local network.
  - Push Notifications: Get notifications about due tasks.
 
-### [+] Usage
+# [+] Usage
  - `Download the latest version.`
  - `Install it on your Android phone.`
  - `Create A Task.`
  - `Complete your task!`
 
-### [+] Credits 
+# [+] Credits 
 <a href="https://github.com/cyber752">Andrew Mikhail (Cyber752)</a>
 
-### [+] Web Interface 
+# [+] Web Interface 
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/66.png)
 
-### [+] Screenshot
-![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/44.png)
-![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/33.png)
-![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/22.png)
-![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/55.png)
+# [+] Screenshot
+
+||||
+|:----------------------------------------:|:-----------------------------------------:|:-----------------------------------------: |
+| ![](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/33.png) | ![](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/44.png) |
+| ![](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/55.png)  | ![](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/22.png) |
+
