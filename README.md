@@ -37,6 +37,9 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
 ### [+] Credits 
 <a href="https://github.com/cyber752">Andrew Mikhail (Cyber752)</a>
 
+### [+] Web Interface 
+![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/66.png)
+
 ### [+] Screenshot
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/44.png)
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/33.png)
