@@ -26,10 +26,10 @@ Currently, the app is available only on Android.
 TASKIFY is an app that manages your tasks. Customized for your personal needs. Simplified workspace and design.
 
 ### [+] Features
- - Simple UI Design
- - Repeating Task
- - Web Interface
- - Push Notifications
+ - Simple UI Design.
+ - Repeating Task.
+ - Web Interface: Access your tasks on web browsers from any device on a local network.
+ - Push Notifications: Get notifications about due tasks.
 
 ### [+] Usage
  - `Download the latest version.`
