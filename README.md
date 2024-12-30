@@ -44,4 +44,7 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
 ![screenshot](https://raw.githubusercontent.com/cyber752/Taskify/refs/heads/main/Art/55.png)
 
 ### [+] TASKIFY
-Your task simplified.
+Made with love ❤️.
+
+<h3 align="left">Support:</h3>
+<p><a href="https://ko-fi.com/cyber752"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="cyber752" /></a></p><br><br>
