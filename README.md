@@ -35,15 +35,16 @@ TASKIFY is an app that manages your tasks. Customized for your personal needs. S
  - `Repeating Task.`
  - `Web Interface: Access your tasks on web browsers from any device on a local network.`
  - `Push Notifications: Get notifications about due tasks.`
- - `No Internet or Data Transfer Garbage.`
- - `No sign in or sign up.`
- - `Backup and Restore your data anytime.`
+ - `No Internet, Sign in or Data Transfer Garbage.`
+ - `Local Backup and Restore your data anytime.`
 
 # [+] Usage
  - `Download the latest version.`
  - `Install it on your Android phone.`
  - `Create A Task.`
  - `Complete your task!`
+
+# Help improve TASKIFY! Report a bug or Suggest a feature!
 
 # [+] Credits 
 <a href="https://github.com/cyber752">Andrew Mikhail (Cyber752)</a>
