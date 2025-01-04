@@ -27,17 +27,17 @@
 # [+] Support
 <p><a href="https://ko-fi.com/cyber752"> <img align="center" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="cyber752" /></a></p>
 
-# [+] Disclaimer 
-Currently, the app is available only on Android.
-
 # [+] Description
 TASKIFY is an app that manages your tasks. Customized for your personal needs. Simplified workspace and design.
 
 # [+] Features
- - Simple UI Design.
- - Repeating Task.
- - Web Interface: Access your tasks on web browsers from any device on a local network.
- - Push Notifications: Get notifications about due tasks.
+ - `Simple Modern UI Design.`
+ - `Repeating Task.`
+ - `Web Interface: Access your tasks on web browsers from any device on a local network.`
+ - `Push Notifications: Get notifications about due tasks.`
+ - `No Internet or Data Transfer Garbage.`
+ - `No sign in or sign up.`
+ - `Backup and Restore your data anytime.`
 
 # [+] Usage
  - `Download the latest version.`
